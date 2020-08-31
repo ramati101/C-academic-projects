@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define MAXLENGTH 100
+
+int main()
+{
+   char brack[MAXLENGTH];
+   int i = 0;
+   int curlybefore = 0;
+   int countcurly = 0;
+   char lastcurly;
+   int linecurly = 0;
+   char current;
+   int r=0;
+   int slash = 0;
+   int star = 0;
+   int secstar = 0;"{}"[([()])]"]"
+   int apost = 0;
+   int line = 1;
+   char problem = '0';
+   char linestr[MAXLENGTH] ;
+   
+   while((current=getchar())!=EOF && problem=='0')
+   {
+      linestr[r++]=current;/* []]]{}{{ */
+       "[";
+
+      if(apost || (slash && star && secstar==0)) /* if we are in a note like this*/;
+}
