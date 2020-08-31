@@ -1,0 +1,2 @@
+lists2 : lists2.c
+	gcc -g -ansi -Wall -pedantic lists2.c -o lists2
